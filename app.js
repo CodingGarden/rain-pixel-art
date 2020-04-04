@@ -7,6 +7,7 @@ const yerbas = Array.from({ length: 20 }, (_) => {
   const scale = 0.5 + Math.random();
   element.style.zIndex = -scale;
   element.style.transform = `scale(${scale})`;
+  element.style.animation = `rotation ${1 + Math.random() * 4}s infinite linear`;
   return {
     location: {
       x: Math.floor(Math.random() * window.innerWidth),
